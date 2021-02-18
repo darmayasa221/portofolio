@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+body {
+  transition: 0.5s;
+  font-family: sans-serif;
+}
+
+footer {
+  font-family: 'EB Garamond', serif;
+  padding: 20px;
+  background-color: rgb(49, 190, 255);
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgba(14, 14, 14, 0.919);
+}
+
+.card {
+  margin: 0;
+  box-shadow: 0 0 4px 0 rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* dark mode */
+.dark {
+  background: black;
+  transition: 0.5s;
+}
+
+.dark .card {
+  box-shadow: 0 0 2px 0 rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.dark .skill h2,
+.dark .line-header {
+  color: whitesmoke;
+  border-bottom: 2px whitesmoke solid;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark p {
+  color: whitesmoke;
+}
+
+/* header */
+.mode-light-dark {
+  width: 40px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.jumbotron p {
+  font-family: 'EB Garamond', serif;
+}
+
+.line-header {
+  font-style: italic;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  border-bottom: 2px black solid;
+}
+
+nav {
+  top: 0;
+  position: sticky;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  background-color: rgb(49, 190, 255);
+  justify-content: space-between;
+}
+
+nav ul {
+  padding: 5px;
+  list-style-type: none;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+nav a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: black;
+  transform: translateY(100px);
+  padding-bottom: 5px;
+  border-bottom: 2px black solid;
+}
+
+.conten {
+  padding: 20px;
+}
+
+.profile {
+  width: 200px;
+}
+
+.skill img {
+  width: 40px;
+}
+
+.skill h2 {
+  font-family: 'Open Sans', sans-seri;
+  color: #555;
+  padding: 10px 0;
+  border-bottom: 2px black solid;
+}
+
+.about-me {
+  font-family: 'Open Sans', sans-seri;
+  padding: 20px 0;
+  color: #555;
+}
+
+cite {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+cite a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.2s;
+}
+
+cite a:hover {
+  text-decoration: none;
+  color: rgb(99, 166, 255);
+  transition: 0.2s;
+}
+
+article p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #555;
+}
+
+.article-h5 {
+  font-family: 'Open Sans', sans-seri;
+  text-transform: uppercase;
+  color: #aaaa;
+}
+
+.article-h4 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-seri;
+  color: #555;
+
+}
+
+.about-contents {
+  padding-bottom: 20px;
+}
+
+
+main {
+  padding: 20px;
+  display: flex;
+}
+
+aside {
+  display: flex;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 60%;
+  }
+
+  .conten {
+    padding: 20px;
+  }
+
+  .profile {
+    width: 100px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.344);
+  }
+
+  .skill img {
+    width: 40px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:600px) {
+  nav ul {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center
+  }
+}
